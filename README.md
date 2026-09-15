@@ -22,7 +22,6 @@ The project provides a simple online shopping platform where users can browse pr
 - Django
 - HTML5
 - CSS3
-- JavaScript
 - SQLite
 - Git
 - GitHub
