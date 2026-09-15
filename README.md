@@ -195,37 +195,20 @@ from .gitignore.
 
 🚧 Future Improvements
 🛒 Shopping cart
-💳 Online payment integration
-❤️ Wishlist
 🔎 Product search
 🔍 Product filtering
 ⭐ Product reviews and ratings
 📦 Order management
 👤 User profile
-📧 Email notifications
 🚀 Deployment to production
 👨‍💻 Author
 
-Your Name
+Manoj Bhandari
 
 📜 License
 
 This project is developed for educational and portfolio purposes.
 
-
-### One important thing for your project
-
-I can see both:
-
-```text
-db.sqlite3
-db_backup.sqlite3
-
-in your project. Don't push these database files to GitHub unless you intentionally want the database included.
-
-Your .gitignore should contain:
-
-*.sqlite3
 
 Then run:
 
@@ -235,5 +218,5 @@ git commit -m "Add README and project files"
 After that, connect your GitHub repository and push:
 
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/Django-Ecommerce.git
+git remote add origin https://github.com/manooz10/Django-Ecommerce.git
 git push -u origin main
