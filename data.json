@@ -1,0 +1,361 @@
+[
+{
+  "model": "store.category",
+  "pk": 1,
+  "fields": {
+    "name": "Mobile"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 2,
+  "fields": {
+    "name": "Laptop"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 3,
+  "fields": {
+    "name": "Computer"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 4,
+  "fields": {
+    "name": "Headphone"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 5,
+  "fields": {
+    "name": "E-watch"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1,
+  "fields": {
+    "name": "Noise Airwave Max 4",
+    "description": "Noise Airwave Max 4 Wireless Over Ear Headphones with 70H Playtime, ENC, 40mm Driver, Low Latency(up to 40ms), Dual Pairing, BT v5.4 (Carbon Black)",
+    "price": 2115,
+    "category": 4,
+    "stock": 8,
+    "image": "products/airwave4.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "name": "Apple Watch Series 9",
+    "description": "Apple Watch Series 9 GPS + Cellular 41mm Gold Stainless Steel Case with Clay Sport Band M/L – Middle East Version",
+    "price": 2799,
+    "category": 5,
+    "stock": 7,
+    "image": "products/apple9.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "name": "Apple watch series 11",
+    "description": "Apple Watch Series 11 combines premium design, advanced health tracking, and seamless iPhone connectivity. Featuring an Always-On Retina LTPO3 OLED display, powerful S10 chip, 64 GB storage, and sensors for ECG, SpO₂, sleep, and temperature monitoring. Water-resistant up to 50 m with IP6X dust protection — your perfect fitness, health, and lifestyle companion.",
+    "price": 47990,
+    "category": 5,
+    "stock": 3,
+    "image": "products/apple11.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "name": "Beats - Studio Pro",
+    "description": "Beats - Studio Pro - Wireless Noise Cancelling Over-the-Ear Headphones - Black",
+    "price": 25989,
+    "category": 4,
+    "stock": 7,
+    "image": "products/apple-beatstudio.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 5,
+  "fields": {
+    "name": "Apple Watch Ultra",
+    "description": "Apple Watch Ultra GPS + Cellular 49mm Titanium with Green Alpine Loop A2622",
+    "price": 89900,
+    "category": 5,
+    "stock": 8,
+    "image": "products/appleultra.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 6,
+  "fields": {
+    "name": "ASUS Vivobook 14",
+    "description": "ASUS Vivobook 15, Smartchoice,Intel Corei5 13thGen 13420H, 16GB RAM, 512GB SSD, FHD 15.6\", Win11, Office Home'24, M365 Basic (1Year)*, Cool Silver, 1.70kg, X1502VA-BQ835WS, Intel UHD iGPU, Laptop",
+    "price": 69989,
+    "category": 2,
+    "stock": 11,
+    "image": "products/asus14.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 7,
+  "fields": {
+    "name": "Gaming PC",
+    "description": "Boasting AMD’s Ryzen 7 7800X3D CPU and Radeon RX 9070 XT GPU, alongside 32GB of DDR5 RAM and 2TB PCIe Gen 4 SSD, the RDY Element 9 Pro R07 offers up stellar 1440p performance, and even enough for 4K gaming. Seeing demanding titles like Black Myth: Wukong at 4K Cinematic settings hit nearly 60 FPS is a triumph, and even beats its Nvidia RTX 5070 competition in the likes of Alienware and HP Omen desktops.",
+    "price": 189900,
+    "category": 3,
+    "stock": 7,
+    "image": "products/gamingpc.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 8,
+  "fields": {
+    "name": "boAt Airdopes 111v2",
+    "description": "boAt Airdopes 111v2, Leather Finish, 4Mics ENx, 50H Battery, 13mm Drivers, Dual Pair,Stream Ad Free Music via App Support, Bluetooth TWS in Ear Earbuds Wireless Earphones with mic ((Ivory White)",
+    "price": 4990,
+    "category": 4,
+    "stock": 10,
+    "image": "products/boat.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 9,
+  "fields": {
+    "name": "Dell XPS 15 9530",
+    "description": "This Dell XPS 15 9530 is a 15.6 inch premium business category laptop which comes with a powerful Intel Core i9 13th generation processor. Enjoy lag-free operation with the 13th generation Intel Core i9-13900H Processor that has set standards in computing. Dell XPS 15 9530 was released on February 2023. Buy Dell XPS 15 9530 Laptop (Intel 13th Gen Core i9/ 16GB/ 512GB SSD/ Win 11/ 8GB graphics) on pctech.co.in at lowest price in India. Book this Dell XPS 9530 Core i9 13th generation laptop online on pctech.co.in and grab the best deal today.",
+    "price": 122329,
+    "category": 2,
+    "stock": 10,
+    "image": "products/dellxps15.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 10,
+  "fields": {
+    "name": "Desktop Computer",
+    "description": "Professional Desktop Computer Bundle Intel Core i5 Processor 8GB RAM 500GB Hard Drive DVD-RW with 19\" LCD Wifi Keyboard and Mouse - Used - Walmart.com",
+    "price": 102330,
+    "category": 3,
+    "stock": 6,
+    "image": "products/desktopcomputer.png"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 11,
+  "fields": {
+    "name": "The Dark Cube",
+    "description": "The Dark Cube is a masterpiece of the revolutionary ITX case from Antec. In this untraditional case, the configurations still provide powerful support for your gaming gear. With the mini size, the motherboard support can still reach up to M-ATX. Many convenient designs allow you to have a better PC-DIY experience. The Dark Cube supports high-end hardware and goes beyond the limits. The Dark Cube provides dual front panel options. You can choose between tempered glass or mesh front panels according to your needs of airflow performance or gaming gear showcase.",
+    "price": 312030,
+    "category": 3,
+    "stock": 8,
+    "image": "products/darkcube.avif"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 12,
+  "fields": {
+    "name": "Modern Desktop Computer",
+    "description": "Modern Desktop Computer",
+    "price": 150000,
+    "category": 3,
+    "stock": 5,
+    "image": "products/desktopcomputer.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 13,
+  "fields": {
+    "name": "HP-15",
+    "description": "HP - 15.6\" Touch-Screen - Laptop - Intel Core i5 - 12GB Memory - 256GB SSD - Natural Silver",
+    "price": 50573,
+    "category": 2,
+    "stock": 8,
+    "image": "products/hp15.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 14,
+  "fields": {
+    "name": "iPhone 17 Pro",
+    "description": "iPhone 17 Pro. The most powerful iPhone ever. Brilliant 6.3-inch display, aluminum unibody design, A19 Pro chip, all 48MP rear cameras, and breakthrough battery life.",
+    "price": 179787,
+    "category": 1,
+    "stock": 12,
+    "image": "products/iPhone17_u1QeMmF.png"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 15,
+  "fields": {
+    "name": "Lenovo",
+    "description": "Lenovo - LOQ 15.6\" Gaming Laptop FHD - Intel Core i5-13420H with 8GB Memory - NVIDIA GeForce RTX 3050 6GB - 1TB SSD - Storm Grey",
+    "price": 90199,
+    "category": 2,
+    "stock": 10,
+    "image": "products/lenovoloq.avif"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 16,
+  "fields": {
+    "name": "Leyeet Noise Cancelling Headphones",
+    "description": "Noise Cancelling Headphones, Wireless Bluetooth Headphones with Microphone, Folding Rechargeable Over Ear Headset for TV, Computer, Mac, Laptop, Phone, Suit Travel Home Office, TR905",
+    "price": 4999,
+    "category": 4,
+    "stock": 6,
+    "image": "products/leyeetheadphone.webp"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 17,
+  "fields": {
+    "name": "Logitech headphone",
+    "description": "Logitech - G733 LIGHTSPEED Wireless Over-the-Ear Gaming Headset for PS4, Windows - Black",
+    "price": 15094,
+    "category": 4,
+    "stock": 5,
+    "image": "products/logitech.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 18,
+  "fields": {
+    "name": "Apple MacBook Air",
+    "description": "EooCoo Clear Case for Apple MacBook Air M5 13 inch Cover M4 M3 M2 2026-2022\r\nCompatible for Mac Air 13.6\" Laptop Protection Plastic Smooth Bright Crystal Hard Shell A3449 A3240 A3113 A2681 Accessories",
+    "price": 140695,
+    "category": 2,
+    "stock": 11,
+    "image": "products/macbookair.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 19,
+  "fields": {
+    "name": "PA Maxima Max Pro",
+    "description": "PA Maxima Max Pro Coral 1.9\"Ultra HD Curved Display 600 Nits, BT Calling, Premium Metallic Smartwatch (Classic pinkStrap, Free Size)",
+    "price": 7849,
+    "category": 5,
+    "stock": 9,
+    "image": "products/maxima.webp"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 20,
+  "fields": {
+    "name": "OPPO Find X9 Pro",
+    "description": "The OPPO Find X9 Pro price in UAE starts at AED 4,499 for the 16GB/512GB variant.\r\n\r\nIt runs on the MediaTek Dimensity 9500 chipset, has a 6.78 inch AMOLED display with a 120Hz refresh rate, and carries a triple rear camera led by a 200MP Hasselblad-tuned periscope telephoto lens alongside a 50MP main sensor. The phone has a 7,500mAh silicon-carbon battery with 80W wired and 50W wireless charging, and carries an IP68/IP69 rating for dust and water resistance.",
+    "price": 116312,
+    "category": 1,
+    "stock": 5,
+    "image": "products/oppox9.webp"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 21,
+  "fields": {
+    "name": "Wear OS 5",
+    "description": "Wear OS 5 bumps up the Android version from Android 13 to 14. Reports suggest that Google is already working on Wear OS 5.1 based on Android 15. Wear OS 5 for older Pixel Watches definitely came as a surprise as we were anticipating Google to release it alongside Android 15 in October.",
+    "price": 10999,
+    "category": 5,
+    "stock": 11,
+    "image": "products/os5_zz398vu.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 22,
+  "fields": {
+    "name": "Prebuilt Gaming PC",
+    "description": "This is one of the best-selling prebuilt gaming PCs in CyberPowerPC. Along with the Intel and GeForce CPU+GPU, you get 16GB of DDR5 5600MHz RAM, and a 1TB NVMe M.2 SSD CPU: Intel Core i5-13400F\r\nGPU: NVIDIA GeForce RTX 4060",
+    "price": 189898,
+    "category": 3,
+    "stock": 11,
+    "image": "products/prebuiltgaming.webp"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 23,
+  "fields": {
+    "name": "REDMI 12 5G",
+    "description": "REDMI 12 5G (Moonstone Silver, 128 GB) (6 GB RAM)\r\n6 GB RAM | 128 GB ROM\r\nStore upto 3000 photos\r\nSnapdragon 4 Gen 2 | Octa Core Processor | 2.2 GHz Clock Speed\r\nPowerful Performance. No Hang Phone\r\n50MP + 2MP Rear Camera\r\nGet Vibrant Pictures. Full Of Detail\r\n8MP Front Camera\r\nAttractive Selfies with Clear & Sharp Colours\r\n6.79 inch\r\nBig Screen. Fine Video Viewing Experience\r\n5000 mAh Battery\r\nCharging that can last up to 2 days*",
+    "price": 17999,
+    "category": 1,
+    "stock": 7,
+    "image": "products/redmi12.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 24,
+  "fields": {
+    "name": "Samsung Galaxy Watch8",
+    "description": "Samsung Galaxy Watch8 (40mm, Bluetooth, Graphite) with 3nm Processor | Dual GPS | Sapphire Glass & Armor Aluminum | 5ATM & IP68 | BP, ECG, IHRN & Vascular Load Monitoring | Anti-oxidant Index",
+    "price": 38999,
+    "category": 5,
+    "stock": 9,
+    "image": "products/samsung8.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 25,
+  "fields": {
+    "name": "Samsung Galaxy S23 Ultra",
+    "description": "The new Galaxy S23 Ultra is the go-to flagship from Samsung in 2023. It's powered by the new Snapdragon 8 Gen 2 chipset, carries the same price tag as its predecessor, and has improved gaming and camera capabilities to let you capture the perfect moment. SoC: Qualcomm Snapdragon 8 Gen 2\r\nDisplay: 6.8-inch Dynamic AMOLED 2X, 120Hz\r\nRAM: Up to 12GB\r\nStorage: Up to 1TB\r\nBattery: 5,000 mAh\r\nOperating System: One UI 5.1 based on Android 13",
+    "price": 113939,
+    "category": 1,
+    "stock": 14,
+    "image": "products/samsungs23.webp"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 26,
+  "fields": {
+    "name": "TOUCHMATE Smartwatch",
+    "description": "Touchmate Smartwatch, 1.83\" Full-Touch IPS Display, Sports Mode, Activity Tracker, Sleep Monitor, Heartrate & Blood Pressure Sensor, Blood Oxygen Meter, 190mAh Battery, Orange | TM-SW450NO",
+    "price": 14999,
+    "category": 5,
+    "stock": 6,
+    "image": "products/touchmate.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 27,
+  "fields": {
+    "name": "vivo V27 5G",
+    "description": "vivo V27 5G (Magic Blue, 128 GB) (8 GB RAM)\r\n8 GB RAM | 128 GB ROM\r\nStore up to 3000 photos\r\nMediatek Dimensity 7200 5G | Octa Core Processor | 2.8 GHz Clock Speed\r\nPowerful Performance. No Hang Phone\r\n50MP (OIS) + 8MP + 2MP Rear Camera\r\nGet Vibrant Pictures, Full Of Detail\r\n50MP Front Camera\r\nAttractive Selfies with Clear & Sharp Colours\r\n6.78 Inch Full HD+ AMOLED Display\r\nImmersive Display. Enhanced Viewing Experience\r\n4600 mAh Battery\r\nCharging that can last up to 2 days*",
+    "price": 41020,
+    "category": 1,
+    "stock": 7,
+    "image": "products/vivoV17.webp"
+  }
+}
+]

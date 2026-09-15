@@ -1,0 +1,114 @@
+
+.popular_product{
+  width: 80%;
+  margin: auto;
+}
+
+
+.carousel-item img{
+  height: 350px;
+  object-fit: contain;  
+  margin: 30px ;
+}
+
+.title{
+ width: 80%;
+  margin: 30px auto;
+}
+
+.features{
+ width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+.f1,.f2,.f3,.f4{
+  padding: 30px 20px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+
+}
+
+.f1{
+  background-color: rgb(255, 189, 189);
+    box-shadow: 0px 0px 5px rgb(255, 1, 1);
+
+}
+.f2{
+  background-color: rgb(255, 202, 174);
+    box-shadow: 0px 0px 5px rgb(255, 90, 1);
+
+}
+.f3{
+  background-color: rgb(189, 255, 201);
+      box-shadow: 0px 0px 5px rgb(77, 255, 1);
+
+}
+.f4{
+  background-color: rgb(189, 230, 255);
+      box-shadow: 0px 0px 5px rgb(1, 162, 255);
+
+}
+
+.popular_product{
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+ 
+}
+.card{
+  box-shadow: 0px 0px 10px rgb(210, 210, 210);
+  transition: transform 0.3s ease;
+  border: none !important;
+  
+}
+.card img{
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-detail{
+
+  text-align: center;
+  font-size: 1.2em;
+  margin: 30px 0px ;
+}
+.link{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.a1{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #bed6ff;
+  border-radius: 15px;
+color: black;
+font-size: 1.1em;
+  
+}
+.a1:hover{
+  box-shadow: 0px 0px 5px blue;
+}
+.a2{
+  text-decoration: none;
+   padding: 10px;
+  background-color: #f6b6e2;
+      border-radius: 15px;
+      color: black;
+font-size: 1.1em;
+}
+.a2:hover{
+  box-shadow: 0px 0px 5px rgb(255, 0, 191);
+}
+
+.card:hover{
+transform:translateY(-15px); 
+}

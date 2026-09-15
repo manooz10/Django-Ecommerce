@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Product_detail
+Page {% endblock title %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/cart.css' %}" />
+{% endblock css%} {% block content %}
+
+<main>
+  <div class="left-card">
+    <div class="title">
+      <h1>{{cart.user}}'s Shopping Cart</h1>
+    </div>
+    <hr />
+    <div class="cart-item">
+      <table>
+        <tr>
+          <th>Product Details</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+          <div class="cItem">
+            <td>
+              <img
+                src="{{ item.product.image.url }}"
+                alt="{{item.product.name}}"
+              />
+              <p>{{item.product.name}}</p>
+              <p>{{item.product.category}}</p>
+            </td>
+            <td><a class='quant' href="{% url 'decrease_q' item.id %}">-</a> {{item.quantity}} <a class='quant' href="{% url 'increase_q' item.id %}">+</a></td>
+            <td>{{item.product.price}}</td>
+            <td>{{item.total}}</td>
+            <td><a href="{% url 'remove_cartItem' item.id %}">Remove</a></td>
+          </div>
+          {% endfor %}
+        </tr>
+      </table>
+    </div>
+    <div class="continue">
+    <a href="{% if 'cart' in request.META.HTTP_REFERER %}
+             {% url 'product' %}
+          {% else %}
+             {{ request.META.HTTP_REFERER }}
+          {% endif %}">Continue Shopping</a>
+  </div>
+  </div>
+  <hr />
+  <div class="right-card">
+
+    <div class="total">
+      <h1>Total: ₹{{total}}</h1>
+    </div>
+    <div class="checkout">
+      <a href="{% url 'checkout' %}">Checkout</a>
+    </div>
+  </div>
+</main>
+
+{% endblock content%}

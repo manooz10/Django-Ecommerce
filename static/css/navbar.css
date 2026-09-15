@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Boldonse&family=Fugaz+One&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Gravitas+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 12dvh;
+}
+.nava{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 12dvh;
+  box-shadow: 0px 0px 10px grey;
+  margin: 0;              
+  position: fixed;        
+  top: 0;                
+  left: 0;                
+  width: 100%;            
+  z-index: 1000;          
+background-color: #ffffff;
+
+}
+.nava>p{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style:normal;
+  font-size: 1.7rem;
+}
+
+
+.navbar-text {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.3em;
+margin-top: -5px;
+}
+
+.navbar-item{
+    display: flex;
+    gap: 20px;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+
+.navbar-item>a{
+    text-decoration: none;
+    color: black;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.2rem;
+}
+.navbar-item>a:hover{
+    text-decoration: underline;
+}
+.cart i{
+    color: black;
+    font-size: 1.7rem;
+}
+
+.button a{
+background-color: #60cdff;
+text-decoration: none;
+border-radius: 15px;
+color: black;
+font-size: 1.2em;
+padding: 10px 30px;
+}
+
+.button a:hover{
+    background-color: #007bff;
+  color: #fff;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+    background-color: #e2e1e1;
+    gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+
+}
+
+footer p{
+      font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-style:normal;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.social-media{
+    font-size: 1.8em;
+    display: flex;
+    gap: 40px;
+}
+.social-media a{
+    color: black;
+
+}
+
+.navbar {
+  display: none;
+}
+
+@media (max-width: 850px) {
+
+  .navbar-item{
+    display: none;
+  }
+  .cart{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+
+  .navbar {
+    display: block;  
+  }
+}

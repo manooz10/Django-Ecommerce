@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Product_detail Page  {% endblock title %}
+
+{% block css %}   
+ <link rel="stylesheet" href="{% static 'css/product_detail.css' %}">
+ {% endblock css%}
+
+{% block content %}
+
+<div class="popular_product">
+      <div class="card">
+          <img src="{{ product.image.url }}"  alt="{{ product.name }}">
+          <div class="product-detail">
+            <h5>{{ product.name }}</h5>
+            <p><span>Description:</span> {{product.description}}</p>
+            <p><span>Category:</span> {{product.category}}</p>
+            <p><span>Stock:</span> {{product.stock}} in stock</p>
+            <p><span>Price:</span> ₹ {{ product.price }}</p>
+          </div>
+          <div class="link">
+            <a class="a1" href="{% url 'add_to_cart' product.id %}?next={{ request.path }}" >Add to Cart</a>
+            <a href="{{ request.META.HTTP_REFERER }}">Go back</a>
+          </div>
+        </div>
+  </div>
+
+{% endblock content%}

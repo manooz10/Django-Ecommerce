@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Dashboard  {% endblock title %}
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    {% endblock css %}
+
+
+{% block content %}
+
+<main>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center ps-5">
+          <h2 style="font-size: 3.2em;">Mobile</h2>
+          <p style="font-size: 1.7em;">The future of smartphones, in your hands.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/mobile.png' %}" class="d-block w-100" alt="Mobile">
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center ps-5">
+          <h2 style="font-size: 3.2em;">Laptop</h2>
+          <p style="font-size: 1.7em;">Power that keeps up with your ambitions.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/laptop.png' %}" class="d-block w-100" alt="Laptop">
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center ps-5">
+          <h2 style="font-size: 3.2em;">Computer</h2>
+          <p style="font-size: 1.7em;">Reliable performance for work and play.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/computer.png' %}" class="d-block w-100" alt="Computer">
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center ps-5">
+          <h2 style="font-size: 3.2em;">Headphone</h2>
+          <p style="font-size: 1.7em;">Immersive sound, crystal‑clear moments.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/headphone.png' %}" class="d-block w-100" alt="Headphone">
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center ps-5">
+          <h2 style="font-size: 3.2em;">E-watch</h2>
+          <p style="font-size: 1.7em;">Stay fit, connected, and in style.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/Ewatch.webp' %}" class="d-block w-100" alt="E-watch">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<div class="features">
+    <div class="f1">
+        <i class="fa-solid fa-truck-fast"></i>
+        Free Shipping
+    </div>
+    <div class="f2">
+      <i class="fa-solid fa-money-bill"></i>
+        Secure Payments
+    </div>
+    <div class="f3">
+      <i class="fa-solid fa-sack-dollar"></i>
+        Cash Back Guarantee
+    </div>
+    <div class="f4">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+        24/7 Support
+    </div>
+</div>
+
+    <h1 class="title">Popular Products </h1>
+<div class="popular_product">
+    {% for product in products %}
+      <div class="card">
+          <img src="{{ product.image.url }}"  alt="{{ product.name }}">
+          <div class="product-detail">
+            <h5>{{ product.name }}</h5>
+            <p>₹ {{ product.price }}</p>
+          </div>
+          <div class="link">
+            <a class='a1' href="{% url 'add_to_cart' product.id %}?next={{ request.path }}">Add to Cart</a>
+            <a class="a2" href="{% url 'product_detail' product.id %}" >Item Detail</a>
+          </div>
+        </div>
+    {% endfor %}
+  </div>
+
+{% endblock content %}

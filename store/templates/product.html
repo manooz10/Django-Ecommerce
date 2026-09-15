@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Product Page  {% endblock title %}
+{% block css %}    <link rel="stylesheet" href="{% static 'css/product.css' %}">
+ {% endblock css%}
+{% block content %}
+
+<div class="search">
+    <form method="GET" action="{% url 'product' %}">
+        {% csrf_token %}
+    <input type="text" name="search" value="{{request.GET.search}}" placeholder="Enter product name...">
+       {% if request.GET.category %}
+        <input type="hidden" name="category" value="{{ request.GET.category }}">
+    {% endif %}
+    <button>Search</button>
+    </form>
+</div>
+
+<div class="category">
+<a href="{% url 'product' %}{% if request.GET.search %}?search={{ request.GET.search }}{% endif %}">
+   <button> All </button>
+</a>
+{% for category in categories %}
+<div>
+    <a href="{% url 'product' %}?category={{ category.id }}{% if request.GET.search %}&search={{ request.GET.search }}{% endif %}">
+       <button>{{ category.name }}</button> 
+    </a>
+    </div>
+{% endfor %}
+</div>
+{% if category %}
+<h2>Products in {{ category.name }}</h2>
+{% else %}
+<h2>All Products</h2>
+{% endif %}
+
+<div class="popular_product">
+    {% for product in products %}
+      <div class="card">
+          <img src="{{ product.image.url }}"  alt="{{ product.name }}">
+          <div class="product-detail">
+            <h5>{{ product.name }}</h5>
+            <p>₹ {{ product.price }}</p>
+          </div>
+          <div class="link">
+            <a class="a1" href="{% url 'add_to_cart' product.id %}?next={{ request.path }}">Add to Cart</a>
+            <a class="a2" href="{% url 'product_detail' product.id %}" >Item Detail</a>
+          </div>
+        </div>
+        {% empty %}
+        <h1 style="text-align: center; color: rgb(255, 68, 68);">Not available!!!</h1>
+    {% endfor %}
+  </div>
+
+{% endblock content%}

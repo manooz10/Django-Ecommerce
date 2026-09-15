@@ -1,0 +1,66 @@
+.popular_product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  border: none;
+}
+
+.card img {
+  width:50%;
+  margin: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-detail h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.product-detail p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.link .a1 {
+  background-color: #60cdff;
+  color: #000;
+}
+
+.link a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+span{
+    color: black;
+}

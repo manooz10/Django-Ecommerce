@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Product_detail Page  {% endblock title %}
+
+{% block css %}   
+ <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+ {% endblock css%}
+
+{% block content %}
+
+<div class="contact-container">
+  <h2>Contact Us</h2>
+  
+  <p><strong>Phone:</strong> <a href="tel:+919632440190">+91 9632440190</a></p>
+  <p><strong>Email:</strong> <a href="mailto:manoozbhandari31@gmail.com">manoozbhandari31@gmail.com</a></p>
+  <p><strong>Address:</strong> Bangalore, India</p>
+
+  <form method="POST">
+    {% csrf_token %}
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Enter your name...">
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter your email...">
+
+    <label>Message</label>
+    <textarea name="message" placeholder="Write your message..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+
+</div>
+
+
+{% endblock content%}

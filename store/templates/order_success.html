@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Success</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.success-container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.success-container h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.success-container p {
+    color: #444;
+    margin: 8px 0;
+}
+
+.order-details {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.order-details p {
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+    </style>
+</head>
+
+<body>
+<div class="success-container">
+    <h2>🎉 Thank You!</h2>
+    <p>Your order has been placed successfully.</p>
+
+    <div class="order-details">     
+        <p><strong>Order ID:</strong> {{ order.id }}</p>
+        <p><strong>Total Amount:</strong> Rs. {{ order.total_amount|floatformat:2 }}</p>
+        <p><strong>Status:</strong> {{ order.status }}</p>
+    </div>
+
+    <a href="{% url 'product' %}" class="btn">Continue Shopping</a>
+</div>
+</body>
+</html>
